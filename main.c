@@ -2,7 +2,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <sys/wait.h>
-// #include <stdio.h> // for debugging purposes
+//#include <stdio.h> // for debugging purposes
 
 int	ft_strlen(char *s)
 {
@@ -96,7 +96,7 @@ int	main(int argc, char **argv, char **envp)
 				waitpid(pid, NULL, WUNTRACED);
 		}
 	}
-	// char str[1000];
-	// printf("new path is : %s\n", getcwd(str, 1000)); // to print the new path before the program terminates.
+	//char str[1000];
+	//printf("new path is : %s\n", getcwd(str, 1000)); // to print the new path before the program terminates.
 	return (0);
 }
